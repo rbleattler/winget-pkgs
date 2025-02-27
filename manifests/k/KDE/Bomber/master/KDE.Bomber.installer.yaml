@@ -1,0 +1,23 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: KDE.Bomber
+PackageVersion: master
+InstallerType: nullsoft
+UpgradeBehavior: install
+ProductCode: bomber
+Installers:
+- Architecture: x64
+  Scope: user
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/bomber/master/windows/bomber-master-636-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 27D64A6B32123BE9454D8F2921CE47DA54B2FF6B05175295701C6125D41A9954
+  InstallerSwitches:
+    Custom: /CurrentUser
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/bomber/master/windows/bomber-master-636-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 27D64A6B32123BE9454D8F2921CE47DA54B2FF6B05175295701C6125D41A9954
+  InstallerSwitches:
+    Custom: /AllUsers
+ManifestType: installer
+ManifestVersion: 1.9.0
